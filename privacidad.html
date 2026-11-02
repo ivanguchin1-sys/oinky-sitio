@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad de Oinky</title>
+<style>
+  :root { --bg: #f4faf6; --ink: #3b2328; --muted: #6e5257; --brand: #984a55; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0f1613; --ink: #f6ecee; --muted: #b09da0; --brand: #f6b1b6; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  p { margin: 0 0 12px; }
+  .meta { color: var(--muted); margin-bottom: 24px; }
+  a { color: var(--brand); overflow-wrap: anywhere; }
+</style>
+</head>
+<body>
+<main>
+<h1>Política de privacidad de Oinky</h1>
+<p class="meta">Vigente desde el 1 de noviembre de 2026.</p>
+<h2>En resumen</h2>
+<p>Tu cartera se guarda solo en tu teléfono. Para traer precios y tipos de cambio, la app consulta desde tu teléfono servicios públicos que reciben el símbolo, el ISIN o el nombre público de cada instrumento, o la moneda, pero nunca tus montos, tus notas ni los nombres de tus instituciones (ver «Conexiones a internet»).</p>
+<p>No hay cuentas, registro ni contraseñas, y no existe un servidor de Oinky que reciba tu información.</p>
+<h2>Qué datos maneja la app y dónde quedan</h2>
+<p>Lo que cargás (instituciones, instrumentos, operaciones, montos, precios y notas) se guarda en una base de datos dentro de la app, en tu teléfono. De todo eso, solo salen del teléfono los datos que se detallan en «Conexiones a internet», para traer precios y tipos de cambio.</p>
+<p>La base de datos queda en el almacenamiento privado de la app, al que otras apps no acceden.</p>
+<p>Aparte de la base, la app guarda en el teléfono un archivo con dos preferencias de ese teléfono: si el bloqueo está activado y si querés avisos de vencimiento (y con cuántos días de anticipación). No tiene datos de tu cartera.</p>
+<p>Como Oinky no recibe tus datos, el desarrollador no tiene una base de datos con información de sus usuarios.</p>
+<h2>Conexiones a internet</h2>
+<p>Para traer precios e identificar tus instrumentos, la app consulta directamente desde tu teléfono tres servicios públicos. Las consultas no pasan por ningún servidor de Oinky:</p>
+<p>Yahoo Finance (finance.yahoo.com), para las cotizaciones de los instrumentos que cotizan en bolsa. Para traer precios se envía el símbolo del instrumento (por ejemplo, &quot;CSPX.L&quot;) y el período de fechas, que empieza unos días antes de tu primera operación. Para encontrar un instrumento, cuando lo buscás o cuando la app revisa uno que cargaste, se envía el ticker, el ISIN o el nombre del fondo.</p>
+<p>OpenFIGI (api.openfigi.com, de Bloomberg), para saber en qué bolsas cotiza un ISIN. Se envía solo el ISIN. Se consulta cuando buscás un instrumento por su ISIN, cuando la app no encuentra la cotización de uno que ya cargaste y, una vez por día, para los instrumentos de tipo «Otro» que tienen ISIN, por si en realidad cotizan en bolsa.</p>
+<p>El Banco Central del Uruguay (cotizaciones.bcu.gub.uy), para los tipos de cambio del dólar, el euro y la unidad indexada. Se envía la moneda y el período de fechas.</p>
+<p>Todas las consultas viajan cifradas (HTTPS).</p>
+<p>Esas consultas no incluyen montos, cantidades, notas ni los nombres de tus instituciones. Tampoco llevan tu nombre, tu correo ni datos de una cuenta, porque Oinky no tiene cuentas. Pero la lista de instrumentos que se consultan muestra en qué invertís, y, como en cualquier conexión a internet, esos servicios ven la dirección IP desde la que te conectás.</p>
+<p>Cada servicio se rige por su propia política de privacidad: Yahoo (<a href="https://legal.yahoo.com/e2/es/yahoo/privacy/index.html">https://legal.yahoo.com/e2/es/yahoo/privacy/index.html</a>), OpenFIGI (<a href="https://www.openfigi.com/docs/privacy-policy">https://www.openfigi.com/docs/privacy-policy</a>) y el Banco Central del Uruguay (<a href="https://www.bcu.gub.uy/Paginas/Politica-de-privacidad.aspx">https://www.bcu.gub.uy/Paginas/Politica-de-privacidad.aspx</a>).</p>
+<h2>Sin publicidad, analítica ni rastreo</h2>
+<p>Oinky no muestra publicidad, no usa herramientas de analítica ni de seguimiento y no comparte tus datos con terceros, más allá de las consultas de precios descritas arriba.</p>
+<p>Tampoco envía informes de errores. Si algo falla, la app muestra un detalle técnico (la versión, el sistema del teléfono y el error, sin montos) que podés compartir vos para pedir ayuda; si no lo compartís, no sale del teléfono.</p>
+<h2>Respaldos y copias del teléfono</h2>
+<p>Los respaldos los generás vos desde Ajustes y los guardás donde elijas (Archivos, Drive, correo, etc.). Contienen tu cartera en un archivo sin cifrar: guardalo en un lugar seguro.</p>
+<p>Según la configuración de tu teléfono, las copias de seguridad del sistema (iCloud o Google) pueden incluir los datos de la app. Esas copias las administra Apple o Google, no Oinky.</p>
+<h2>Bloqueo con Face ID, huella o código</h2>
+<p>El bloqueo es opcional. La identificación la hace el sistema del teléfono: Oinky no tiene acceso a tus datos biométricos, solo recibe si la identificación fue correcta.</p>
+<h2>Avisos de vencimiento</h2>
+<p>Los avisos antes de que venza un plazo fijo o un bono son opcionales. Los programa la app en tu teléfono (notificaciones locales): no pasan por ningún servidor y Oinky no usa notificaciones push ni identificadores para enviarte mensajes.</p>
+<p>Con el bloqueo activado, los avisos no muestran el monto, porque pueden verse en la pantalla bloqueada.</p>
+<h2>Cómo borrar tus datos</h2>
+<p>En Ajustes → Borrar todos los datos se borra tu cartera del teléfono: instituciones, instrumentos, operaciones, precios guardados y los ajustes de la cartera (como la moneda principal), y también las copias de una base que no se pudo abrir. Los avisos de vencimiento que estaban programados se cancelan, porque ya no quedan vencimientos.</p>
+<p>No se borran las dos preferencias de ese teléfono (si el bloqueo está activado y si querés avisos de vencimiento): no tienen datos de tu cartera, y las cambiás en Ajustes. Tampoco se borran las copias de los respaldos y los CSV que exportaste, que la app arma en su carpeta temporal para pasárselos a la hoja de compartir: quedan ahí, dentro de la app, hasta que el sistema limpie esa carpeta.</p>
+<p>Desinstalar la app borra todo lo que guarda en el teléfono, también las preferencias y esas copias. Lo que no se borra son los respaldos que hayas guardado vos y las copias de seguridad del sistema (iCloud o Google), que administra Apple o Google.</p>
+<h2>Tus derechos</h2>
+<p>La Ley 18.331 de Protección de Datos Personales de Uruguay te da derecho a acceder a tus datos y a pedir que se rectifiquen, se actualicen, se incluyan o se supriman.</p>
+<p>Como tu cartera está solo en tu teléfono, esos derechos los ejercés desde la app: ves todo lo que cargaste, lo corregís o lo borrás cuando quieras, y «Exportar respaldo» te da una copia de tu cartera en un archivo. Lo que se envía a Yahoo, OpenFIGI o el Banco Central del Uruguay no pasa por Oinky, así que Oinky no lo puede consultar ni borrar: cada servicio lo maneja según su política.</p>
+<p>Para consultas o reclamos sobre esta política, escribí al contacto que figura al final. También podés recurrir a la Unidad Reguladora y de Control de Datos Personales (<a href="https://www.gub.uy/unidad-reguladora-control-datos-personales/">https://www.gub.uy/unidad-reguladora-control-datos-personales/</a>).</p>
+<h2>Cambios en esta política</h2>
+<p>Si la política cambia, se publica la nueva versión en esta página con su fecha.</p>
+<h2>Responsable y contacto</h2>
+<p>La app Oinky y esta política son responsabilidad de Ivan Guchin.</p>
+<p>Consultas sobre esta política o sobre tus datos: <a href="mailto:ivanguchin1@gmail.com">ivanguchin1@gmail.com</a></p>
+</main>
+</body>
+</html>
